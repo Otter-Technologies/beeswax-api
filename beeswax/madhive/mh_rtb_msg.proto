@@ -1,0 +1,19 @@
+syntax="proto2";
+package madhive;
+
+option java_package = "com.beeswax.madhive";
+
+import "beeswax/augment/augmentor.proto";
+import "beeswax/bid/request.proto";
+import "beeswax/logs/ad_log.proto";
+
+message MHRTB {
+  required string uuid = 1;
+  required int64 unix_nano = 2;
+
+  optional augment.AugmentorRequest aug_req = 3;
+  optional augment.AugmentorResponse aug_res = 4;
+  optional bid.BidAgentRequest bid_req = 5;
+  optional bid.BidAgentResponse bid_res = 6;
+  optional logs.AdLogMessage ad_log = 7;
+}
