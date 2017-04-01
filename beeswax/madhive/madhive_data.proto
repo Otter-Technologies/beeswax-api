@@ -7,10 +7,10 @@ import "beeswax/augment/augmentor.proto";
 import "beeswax/bid/request.proto";
 import "beeswax/logs/ad_log.proto";
 
-message MHRTBList {
-  repeated MHRTB messages = 1;
+message MadHiveData {
+  repeated RTB rtb_messages = 1;
 
-  message MHRTB {
+  message RTB {
     required string uuid = 1;
     required int64 unix_nano = 2;
 
