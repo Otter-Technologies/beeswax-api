@@ -1,7 +1,7 @@
 syntax="proto2";
 package madhive;
 
-option java_package = "com.beeswax.madhive";
+option java_package = "com.madhive.data";
 
 import "beeswax/augment/augmentor.proto";
 import "beeswax/bid/request.proto";
